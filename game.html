@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Guessing Game</title>
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body>
+		<div id="game" class="container game">
+			<div class="top">
+				<h1>Guessing Game</h1>
+			</div>
+			<!--==========Player 01==========-->
+			<div class="player01">
+				<h2>PLAYER ONE</h2>
+				<h3 class="p01Num">
+					<div class="p01NumLoading">
+						<div class="hourglassBackground">
+							<div class="hourglassContainer">
+								<div class="hourglassCurves"></div>
+								<div class="hourglassCapTop"></div>
+								<div class="hourglassGlassTop"></div>
+								<div class="hourglassSand"></div>
+								<div class="hourglassSandStream"></div>
+								<div class="hourglassCapBottom"></div>
+								<div class="hourglassGlass"></div>
+							</div>
+						</div>
+					</div>
+				</h3>
+				<button class="p01Submit">Set a number</button>
+				<button class="p02Turn">guess the Number</button>
+			</div>
+			<!--==========Player 01 ends============-->
+
+			<!--==========Player 02============-->
+			<div class="player02">
+				<h2>PLAYER TWO</h2>
+				<input type="number" class="p02Num">
+				<div class="tryCount">
+					<div class="tries">
+						<span class="try"></span>
+						<span class="try"></span>
+						<span class="try"></span>
+					</div>
+					<h3><p>life line</p><span class="triesLeftCount"> 0 </span></h3>
+				</div>
+				<button class="p02Submit">Submit</button>
+			</div>
+			<!--=========Player 02 ends=======-->
+
+			<!--=====Pop-up===========-->
+			<div class="popUp"></div>
+			<!--=====Pop-up ends========-->
+		</div>
+		<script src="./js/game.js"></script>
+	</body>
+</html>
